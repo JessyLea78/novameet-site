@@ -11,70 +11,62 @@
 <body>
 <div class="orb orb1"></div><div class="orb orb2"></div>
 <header><div class="container nav">
-  <div class="logo"><div class="logo-mark">N</div><span><b>NovaMeet</b> <span style="color:#9AA3C7;font-weight:500">Meet Beyond Borders</span></span></div>
-  <nav class="nav-links">
-    <a href="index.html" data-page="index.html">Accueil</a>
-    <a href="assistance.html" data-page="assistance.html">Assistance</a>
-    <a href="confidentialite.html" data-page="confidentialite.html">Confidentialité</a>
-    <a href="suppression-compte.html" data-page="suppression-compte.html">Suppression</a>
-    <a href="mailto:novameet.contact@gmail.com" class="btn btn-primary" style="margin-left:8px">Contact</a>
-  </nav>
+<div class="logo"><div class="logo-mark">N</div><span><b>NovaMeet</b> <span style="color:#9AA3C7;font-weight:500">Meet Beyond Borders</span></span></div>
+<nav class="nav-links">
+<a href="index.html" data-page="index.html">Accueil</a>
+<a href="assistance.html" data-page="assistance.html">Assistance</a>
+<a href="confidentialite.html" data-page="confidentialite.html">Confidentialité</a>
+<a href="suppression-compte.html" data-page="suppression-compte.html">Suppression</a>
+<a href="mailto:novameet.contact@gmail.com" class="btn btn-primary" style="margin-left:8px">Contact</a>
+</nav>
 </div></header>
-
 <main class="container">
-<div class="hero"><div class="badge">Support: novameet.support@gmail.com</div><h1>Assistance <em>NovaMeet</em></h1><p>Nous répondons sous 24-72h. Pour les signalements de harcèlement ou faux profils, traitement prioritaire.</p></div>
+<div class="hero"><div class="badge">Support: novameet.support@gmail.com</div><h1>Assistance <em>NovaMeet</em></h1><p>Reponse 24-72h, prioritaire pour harcelement.</p></div>
 <div class="grid grid-2 section">
-  <div>
-    <div class="grid" style="gap:14px">
-      <div class="card"><h3>👤 Assistance utilisateurs</h3><p class="muted">Utilisation de l'app, abonnements, Premium, modération. Contact: novameet.support@gmail.com</p></div>
-      <div class="card"><h3>🐞 Signalement bugs</h3><p class="muted">Crash, messages non envoyés, photos. Incluez modèle téléphone + capture.</p></div>
-      <div class="card"><h3>🕵️ Faux profils</h3><p class="muted">Usurpation, arnaque, spam. Vérification sous 48h. Email: novameet.support@gmail.com</p></div>
-      <div class="card"><h3>🚨 Harcèlement & abus</h3><p class="muted">Harcèlement, haine, contenu non consenti. Signalement prioritaire + blocage in-app.</p></div>
-      <div class="card"><h3>🔑 Connexion</h3><p class="muted">OTP non reçu, email non reconnu. Vérifiez spams. Contact: novameet.support@gmail.com</p></div>
-    </div>
-    <div class="section"><h2>FAQ</h2>
-      <div class="accordion">
-        <div class="acc-item"><div class="acc-q">Comment supprimer mon compte ? <span>+</span></div><div class="acc-a">Page <a href="suppression-compte.html">suppression-compte.html</a> ou email à novameet.privacy@gmail.com depuis l'adresse du compte.</div></div>
-        <div class="acc-item"><div class="acc-q">Délai de réponse ? <span>+</span></div><div class="acc-a">24-72h ouvrées. Prioritaire pour abus.</div></div>
-        <div class="acc-item"><div class="acc-q">Comment contacter l'équipe ? <span>+</span></div><div class="acc-a">Support: novameet.support@gmail.com • Contact: novameet.contact@gmail.com • Vie privée: novameet.privacy@gmail.com</div></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="card"><h2>Contacter l'assistance</h2>
-      <div class="notice" style="margin:10px 0">✅ Formulaire opérationnel via email. Votre demande ouvre directement votre client mail vers notre support. Pas de backend externe requis pour cette version.</div>
-      <form id="contactForm" class="form" onsubmit="return handleContact(event)">
-        <input id="c_name" class="input" required placeholder="Nom complet"/>
-        <input id="c_email" class="input" type="email" required placeholder="Email lié au compte NovaMeet"/>
-        <select id="c_type" class="select" required><option value="">Type de demande *</option><option>Assistance générale</option><option>Bug technique</option><option>Faux profil</option><option>Harcèlement / Abus</option><option>Problème de connexion</option><option>Demande de suppression de compte</option></select>
-        <textarea id="c_msg" class="textarea" required placeholder="Décrivez votre problème..."></textarea>
-        <label style="font-size:13px;display:flex;gap:8px"><input type="checkbox" required/> J'accepte que ma demande soit traitée selon la politique de confidentialité.</label>
-        <button class="btn btn-primary" type="submit">Envoyer à novameet.support@gmail.com →</button>
-        <div id="contactMsg" class="notice" style="display:none"></div>
-      </form>
-      <div style="margin-top:16px;font-size:13px">Ou écrivez directement: <br/><a href="mailto:novameet.support@gmail.com?subject=Assistance%20NovaMeet">novameet.support@gmail.com</a> • <a href="mailto:novameet.contact@gmail.com">novameet.contact@gmail.com</a></div>
-    </div>
-  </div>
+<div>
+<div class="grid" style="gap:14px">
+<div class="card"><h3>👤 Utilisateurs</h3><p class="muted">Support general: novameet.support@gmail.com</p></div>
+<div class="card"><h3>🐞 Bugs</h3><p class="muted">Crash, messages, photos.</p></div>
+<div class="card"><h3>🕵️ Faux profils</h3><p class="muted">Signalement 48h.</p></div>
+<div class="card"><h3>🚨 Harcelement</h3><p class="muted">Prioritaire.</p></div>
+<div class="card"><h3>🔑 Connexion</h3><p class="muted">OTP, email.</p></div>
+</div>
+<div class="section"><h2>FAQ</h2><div class="accordion">
+<div class="acc-item"><div class="acc-q">Supprimer mon compte ? <span>+</span></div><div class="acc-a">Page <a href="suppression-compte.html">suppression</a> ou email novameet.privacy@gmail.com</div></div>
+<div class="acc-item"><div class="acc-q">Contact ? <span>+</span></div><div class="acc-a">novameet.contact@gmail.com / support / privacy</div></div>
+</div></div>
+</div>
+<div>
+<div class="card"><h2>Contacter</h2>
+<div class="notice" style="margin:10px 0">✅ Formulaire operationnel via mailto vers support.</div>
+<form id="contactForm" class="form" onsubmit="return handleContact(event)">
+<input id="c_name" class="input" required placeholder="Nom complet"/>
+<input id="c_email" class="input" type="email" required placeholder="Email compte"/>
+<select id="c_type" class="select" required><option value="">Type *</option><option>Assistance generale</option><option>Bug</option><option>Faux profil</option><option>Harcelement</option><option>Connexion</option><option>Suppression</option></select>
+<textarea id="c_msg" class="textarea" required placeholder="Message..."></textarea>
+<label style="font-size:13px;display:flex;gap:8px"><input type="checkbox" required/> J'accepte politique confidentialite.</label>
+<button class="btn btn-primary" type="submit">Envoyer a novameet.support@gmail.com →</button>
+<div id="contactMsg" class="notice" style="display:none"></div>
+</form>
+<div style="margin-top:12px"><a href="mailto:novameet.support@gmail.com">novameet.support@gmail.com</a></div>
+</div>
+</div>
 </div>
 </main>
-
 <footer><div class="container" style="display:grid;gap:18px">
-  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px">
-    <div><div class="logo" style="margin-bottom:8px"><div class="logo-mark">N</div><span><b>NovaMeet</b></span></div>Meet Beyond Borders.<br/>Site officiel de l'application NovaMeet V2.<br/><br/>
-    <div style="font-size:13px;line-height:1.8">
-    Éditeur: Jess Zola Gamma<br/>
-    SIREN: 108608969<br/>
-    SIRET: 10860896900011<br/>
-    Adresse: 12 Square Henri Wallon, 78190 Trappes, France<br/>
-    Contact: <a href="mailto:novameet.contact@gmail.com">novameet.contact@gmail.com</a><br/>
-    Support: <a href="mailto:novameet.support@gmail.com">novameet.support@gmail.com</a><br/>
-    Confidentialité: <a href="mailto:novameet.privacy@gmail.com">novameet.privacy@gmail.com</a>
-    </div></div>
-    <div><b style="color:#E8ECFF">Liens officiels</b><br/><a href="assistance.html">/assistance.html</a><br/><a href="confidentialite.html">/confidentialite.html</a><br/><a href="suppression-compte.html">/suppression-compte.html</a><br/><br/><b style="color:#E8ECFF">Contact</b><br/><a href="mailto:novameet.contact@gmail.com">Contact général</a><br/><a href="mailto:novameet.support@gmail.com">Support utilisateurs</a><br/><a href="mailto:novameet.privacy@gmail.com">Données personnelles</a></div>
-  </div>
-  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid rgba(255,255,255,0.1);padding-top:14px">
-    <span>© 2026 NovaMeet — Tous droits réservés</span><span>Design V2 #070A14 / #3A7BFF / #8B5CF6</span>
-  </div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px">
+<div><div class="logo" style="margin-bottom:8px"><div class="logo-mark">N</div><span><b>NovaMeet</b></span></div>Meet Beyond Borders.<br/>Site officiel NovaMeet V2.<br/><br/>
+<div style="font-size:13px;line-height:1.8">
+Editeur: Jess Zola Gamma<br/>SIREN: 108608969<br/>SIRET: 10860896900011<br/>Adresse: 12 Square Henri Wallon, 78190 Trappes, France<br/>
+Contact: <a href="mailto:novameet.contact@gmail.com">novameet.contact@gmail.com</a><br/>
+Support: <a href="mailto:novameet.support@gmail.com">novameet.support@gmail.com</a><br/>
+Confidentialite: <a href="mailto:novameet.privacy@gmail.com">novameet.privacy@gmail.com</a>
+</div></div>
+<div><b style="color:#E8ECFF">Liens officiels</b><br/><a href="assistance.html">/assistance.html</a><br/><a href="confidentialite.html">/confidentialite.html</a><br/><a href="suppression-compte.html">/suppression-compte.html</a><br/><br/><b style="color:#E8ECFF">Contact</b><br/><a href="mailto:novameet.contact@gmail.com">Contact</a><br/><a href="mailto:novameet.support@gmail.com">Support</a><br/><a href="mailto:novameet.privacy@gmail.com">Privacy</a></div>
+</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid rgba(255,255,255,0.1);padding-top:14px">
+<span>© 2026 NovaMeet</span><span>#070A14 / #3A7BFF / #8B5CF6 - V2 Premium</span>
+</div>
 </div></footer>
 <script src="js/main.js"></script>
 </body>

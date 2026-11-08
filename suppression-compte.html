@@ -3,75 +3,60 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Suppression de compte | NovaMeet</title>
-<meta name="description" content="Suppression compte NovaMeet"/>
+<title>Suppression | NovaMeet</title>
+<meta name="description" content="Suppression NovaMeet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <div class="orb orb1"></div><div class="orb orb2"></div>
 <header><div class="container nav">
-  <div class="logo"><div class="logo-mark">N</div><span><b>NovaMeet</b> <span style="color:#9AA3C7;font-weight:500">Meet Beyond Borders</span></span></div>
-  <nav class="nav-links">
-    <a href="index.html" data-page="index.html">Accueil</a>
-    <a href="assistance.html" data-page="assistance.html">Assistance</a>
-    <a href="confidentialite.html" data-page="confidentialite.html">Confidentialité</a>
-    <a href="suppression-compte.html" data-page="suppression-compte.html">Suppression</a>
-    <a href="mailto:novameet.contact@gmail.com" class="btn btn-primary" style="margin-left:8px">Contact</a>
-  </nav>
+<div class="logo"><div class="logo-mark">N</div><span><b>NovaMeet</b> <span style="color:#9AA3C7;font-weight:500">Meet Beyond Borders</span></span></div>
+<nav class="nav-links">
+<a href="index.html" data-page="index.html">Accueil</a>
+<a href="assistance.html" data-page="assistance.html">Assistance</a>
+<a href="confidentialite.html" data-page="confidentialite.html">Confidentialité</a>
+<a href="suppression-compte.html" data-page="suppression-compte.html">Suppression</a>
+<a href="mailto:novameet.contact@gmail.com" class="btn btn-primary" style="margin-left:8px">Contact</a>
+</nav>
 </div></header>
-
 <main class="container">
-<div class="hero"><div class="badge">Contact suppression: novameet.privacy@gmail.com • Apple 5.1.1(v) conforme</div><h1>Suppression de <em>compte</em></h1><p>Demandez la suppression définitive de votre compte NovaMeet. Traitement sous 30 jours maximum.</p></div>
+<div class="hero"><div class="badge">novameet.privacy@gmail.com • Apple 5.1.1(v)</div><h1>Suppression de <em>compte</em></h1><p>Demande definitive, 30j max.</p></div>
 <div class="grid grid-2 section">
-  <div class="grid" style="gap:14px">
-    <div class="card"><h2>Procédure</h2><ol style="margin-left:18px;display:grid;gap:8px">
-      <li><b>Demande</b> via formulaire ou email à novameet.privacy@gmail.com</li>
-      <li><b>Identification sécurisée</b> — vérification que l'email correspond au compte</li>
-      <li><b>Suppression</b> — profil invisible immédiatement</li>
-      <li><b>Purge données</b> — photos, messages, préférences supprimés sous 30j</li>
-      <li><b>Confirmation</b> — email final de confirmation</li>
-    </ol>
-    <div class="notice" style="margin-top:12px">⚠️ Important: Cette page utilise un envoi email opérationnel. La suppression automatique complète nécessite la connexion à votre backend Supabase (Edge Function admin). Tant que cette connexion n'est pas active, la suppression est effectuée manuellement sous 30 jours après vérification — ce qui est accepté par Apple si clairement expliqué.</div>
-    </div>
-    <div class="card"><h3>Que supprimons-nous ?</h3><ul style="margin-left:18px;color:#9AA3C7"><li>Profil, bio, pseudo</li><li>Photos / vidéos (Storage)</li><li>Messages privés</li><li>Likes, matchs, préférences</li><li>Tokens push</li></ul></div>
-    <div class="card"><h3>Obligations légales de conservation</h3><p class="muted">Certaines données peuvent être conservées temporairement: logs sécurité 13 mois, preuves de fraude, obligations comptables liées aux achats (5 ans). Elles ne sont plus visibles dans l'app.</p></div>
-  </div>
-  <div class="card"><h2>Demande de suppression</h2>
-    <div class="notice" style="margin:10px 0">✅ Formulaire opérationnel — ouvre votre client mail vers novameet.privacy@gmail.com avec toutes les infos pré-remplies.</div>
-    <form id="deleteForm" class="form" onsubmit="return handleDelete(event)">
-      <input id="d_email" class="input" type="email" required placeholder="Email du compte NovaMeet *"/>
-      <input id="d_pseudo" class="input" required placeholder="Pseudo / Identifiant"/>
-      <select id="d_reason" class="select" required><option value="">Raison *</option><option>Je n'utilise plus l'app</option><option>Préoccupations vie privée</option><option>Autre app</option><option>Harcèlement / Mauvaise expérience</option><option>Autre</option></select>
-      <textarea id="d_msg" class="textarea" placeholder="Commentaire (optionnel)"></textarea>
-      <label style="font-size:13px;display:flex;gap:8px"><input type="checkbox" required/> Je comprends que la suppression est définitive et irréversible. *</label>
-      <label style="font-size:13px;display:flex;gap:8px"><input type="checkbox" required/> Je confirme être propriétaire du compte indiqué. *</label>
-      <button class="btn btn-primary" type="submit">Envoyer demande à novameet.privacy@gmail.com →</button>
-      <div id="deleteMsg" class="notice" style="display:none"></div>
-    </form>
-    <div style="margin-top:12px;font-size:13px">Ou écrivez directement: <a href="mailto:novameet.privacy@gmail.com?subject=Demande%20suppression%20compte%20NovaMeet">novameet.privacy@gmail.com</a><br/>Support: <a href="mailto:novameet.support@gmail.com">novameet.support@gmail.com</a></div>
-    <div style="margin-top:14px" class="card" style="background:rgba(255,255,255,0.03)"><h3 style="font-size:14px">Pour développeur - Backend à connecter (optionnel mais recommandé)</h3><p style="font-size:12px;color:#9AA3C7">Pour automatiser: créer Supabase Edge Function POST /delete-account qui vérifie email via OTP puis supabase.auth.admin.deleteUser + purge storage. Actuellement la suppression est manuelle (conforme si délai <30j annoncé).</p></div>
-  </div>
+<div class="grid" style="gap:14px">
+<div class="card"><h2>Procedure</h2><ol style="margin-left:18px;display:grid;gap:8px"><li>Demande via formulaire ou email privacy</li><li>Verification email compte</li><li>Suppression profil immediate</li><li>Purge 30j</li><li>Confirmation email</li></ol><div class="notice" style="margin-top:12px">Suppression manuelle via email operationnelle. Automatisation Supabase recommandee plus tard mais conforme Apple avec delai annonce.</div></div>
+<div class="card"><h3>Que supprimons-nous ?</h3><ul style="margin-left:18px;color:#9AA3C7"><li>Profil, bio</li><li>Photos Storage</li><li>Messages</li><li>Likes, matchs</li></ul></div>
+</div>
+<div class="card"><h2>Demande suppression</h2>
+<div class="notice" style="margin:10px 0">✅ Formulaire operationnel mailto privacy.</div>
+<form id="deleteForm" class="form" onsubmit="return handleDelete(event)">
+<input id="d_email" class="input" type="email" required placeholder="Email compte *"/>
+<input id="d_pseudo" class="input" required placeholder="Pseudo"/>
+<select id="d_reason" class="select" required><option value="">Raison *</option><option>Plus utilise</option><option>Vie privee</option><option>Autre app</option><option>Harcelement</option><option>Autre</option></select>
+<textarea id="d_msg" class="textarea" placeholder="Commentaire"></textarea>
+<label style="font-size:13px;display:flex;gap:8px"><input type="checkbox" required/> Definitive et irreversible.</label>
+<label style="font-size:13px;display:flex;gap:8px"><input type="checkbox" required/> Proprietaire compte.</label>
+<button class="btn btn-primary" type="submit">Envoyer a privacy →</button>
+<div id="deleteMsg" class="notice" style="display:none"></div>
+</form>
+<div style="margin-top:12px"><a href="mailto:novameet.privacy@gmail.com">novameet.privacy@gmail.com</a></div>
+</div>
 </div>
 </main>
-
 <footer><div class="container" style="display:grid;gap:18px">
-  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px">
-    <div><div class="logo" style="margin-bottom:8px"><div class="logo-mark">N</div><span><b>NovaMeet</b></span></div>Meet Beyond Borders.<br/>Site officiel de l'application NovaMeet V2.<br/><br/>
-    <div style="font-size:13px;line-height:1.8">
-    Éditeur: Jess Zola Gamma<br/>
-    SIREN: 108608969<br/>
-    SIRET: 10860896900011<br/>
-    Adresse: 12 Square Henri Wallon, 78190 Trappes, France<br/>
-    Contact: <a href="mailto:novameet.contact@gmail.com">novameet.contact@gmail.com</a><br/>
-    Support: <a href="mailto:novameet.support@gmail.com">novameet.support@gmail.com</a><br/>
-    Confidentialité: <a href="mailto:novameet.privacy@gmail.com">novameet.privacy@gmail.com</a>
-    </div></div>
-    <div><b style="color:#E8ECFF">Liens officiels</b><br/><a href="assistance.html">/assistance.html</a><br/><a href="confidentialite.html">/confidentialite.html</a><br/><a href="suppression-compte.html">/suppression-compte.html</a><br/><br/><b style="color:#E8ECFF">Contact</b><br/><a href="mailto:novameet.contact@gmail.com">Contact général</a><br/><a href="mailto:novameet.support@gmail.com">Support utilisateurs</a><br/><a href="mailto:novameet.privacy@gmail.com">Données personnelles</a></div>
-  </div>
-  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid rgba(255,255,255,0.1);padding-top:14px">
-    <span>© 2026 NovaMeet — Tous droits réservés</span><span>Design V2 #070A14 / #3A7BFF / #8B5CF6</span>
-  </div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px">
+<div><div class="logo" style="margin-bottom:8px"><div class="logo-mark">N</div><span><b>NovaMeet</b></span></div>Meet Beyond Borders.<br/>Site officiel NovaMeet V2.<br/><br/>
+<div style="font-size:13px;line-height:1.8">
+Editeur: Jess Zola Gamma<br/>SIREN: 108608969<br/>SIRET: 10860896900011<br/>Adresse: 12 Square Henri Wallon, 78190 Trappes, France<br/>
+Contact: <a href="mailto:novameet.contact@gmail.com">novameet.contact@gmail.com</a><br/>
+Support: <a href="mailto:novameet.support@gmail.com">novameet.support@gmail.com</a><br/>
+Confidentialite: <a href="mailto:novameet.privacy@gmail.com">novameet.privacy@gmail.com</a>
+</div></div>
+<div><b style="color:#E8ECFF">Liens officiels</b><br/><a href="assistance.html">/assistance.html</a><br/><a href="confidentialite.html">/confidentialite.html</a><br/><a href="suppression-compte.html">/suppression-compte.html</a><br/><br/><b style="color:#E8ECFF">Contact</b><br/><a href="mailto:novameet.contact@gmail.com">Contact</a><br/><a href="mailto:novameet.support@gmail.com">Support</a><br/><a href="mailto:novameet.privacy@gmail.com">Privacy</a></div>
+</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid rgba(255,255,255,0.1);padding-top:14px">
+<span>© 2026 NovaMeet</span><span>#070A14 / #3A7BFF / #8B5CF6 - V2 Premium</span>
+</div>
 </div></footer>
 <script src="js/main.js"></script>
 </body>
