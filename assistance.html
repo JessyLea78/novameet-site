@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Assistance | NovaMeet</title>
+<meta name="description" content="Assistance NovaMeet - aide, bugs, signalements"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="orb orb1"></div><div class="orb orb2"></div>
+<header><div class="container nav">
+  <div class="logo"><div class="logo-mark">N</div><span><b>NovaMeet</b> <span style="color:#9AA3C7;font-weight:500">Meet Beyond Borders</span></span></div>
+  <nav class="nav-links">
+    <a href="index.html" data-page="index.html">Accueil</a>
+    <a href="assistance.html" data-page="assistance.html">Assistance</a>
+    <a href="confidentialite.html" data-page="confidentialite.html">Confidentialité</a>
+    <a href="suppression-compte.html" data-page="suppression-compte.html">Suppression</a>
+    <a href="#" class="btn btn-primary" style="margin-left:8px">Télécharger</a>
+  </nav>
+</div></header>
+
+<main class="container">
+<div class="hero"><div class="badge">Assistance officielle</div><h1>Assistance <em>NovaMeet</em></h1><p>Nous sommes là pour vous aider. Signalez un problème, un faux profil ou demandez la suppression de votre compte.</p></div>
+<div class="grid grid-2 section">
+  <div>
+    <div class="grid" style="gap:14px">
+      <div class="card"><h3>👤 Assistance utilisateurs</h3><p class="muted">Questions sur l'utilisation, abonnements, fonctionnalités Premium, modération.</p></div>
+      <div class="card"><h3>🐞 Signalement bugs</h3><p class="muted">Crash, messages non envoyés, photos qui ne chargent pas, géolocalisation.</p></div>
+      <div class="card"><h3>🕵️ Faux profils</h3><p class="muted">Usurpation d'identité, photos volées, arnaque, spam. Nous vérifions sous 48h.</p></div>
+      <div class="card"><h3>🚨 Harcèlement & comportements abusifs</h3><p class="muted">Harcèlement, propos haineux, contenu sexuel non consenti, menaces. Signalement prioritaire.</p></div>
+      <div class="card"><h3>🔑 Problèmes de connexion</h3><p class="muted">Code OTP non reçu, email non reconnu, compte bloqué.</p></div>
+    </div>
+    <div class="section"><h2>FAQ</h2>
+      <div class="accordion">
+        <div class="acc-item"><div class="acc-q">Comment supprimer mon compte ? <span>+</span></div><div class="acc-a">Allez sur <a href="suppression-compte.html">/suppression-compte.html</a> et suivez la procédure sécurisée. La suppression est irréversible.</div></div>
+        <div class="acc-item"><div class="acc-q">Combien de temps pour une réponse ? <span>+</span></div><div class="acc-a">Objectif 24-72h ouvrées. Pour harcèlement, prioritaire.</div></div>
+        <div class="acc-item"><div class="acc-q">Mes messages sont-ils lus par l'assistance ? <span>+</span></div><div class="acc-a">Non, sauf signalement avec votre consentement. Voir <a href="confidentialite.html">Politique de confidentialité</a>.</div></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="card"><h2>Contacter l'assistance</h2>
+      <div class="warn" style="margin:10px 0">🔧 Formulaire prêt pour backend. Actuellement non opérationnel : il n'envoie PAS réellement de demande. À connecter à Supabase / API.</div>
+      <form id="contactForm" class="form">
+        <input class="input" required placeholder="Nom complet"/>
+        <input class="input" type="email" required placeholder="Email lié au compte NovaMeet"/>
+        <select class="select" required><option value="">Type de demande *</option><option>Assistance générale</option><option>Bug technique</option><option>Faux profil</option><option>Harcèlement / Abus</option><option>Problème de connexion</option><option>Demande de suppression de compte</option></select>
+        <textarea class="textarea" required placeholder="Décrivez votre problème avec le plus de détails..."></textarea>
+        <div class="todo">Champ upload capture écran : [À brancher si besoin backend storage]</div>
+        <label style="font-size:13px;display:flex;gap:8px"><input type="checkbox" required/> Je comprends que ma demande sera traitée selon la politique de confidentialité.</label>
+        <button class="btn btn-primary" type="submit">Envoyer la demande</button>
+        <div id="contactMsg" class="notice" style="display:none"></div>
+      </form>
+      <div style="margin-top:16px"><div class="todo">Email d'assistance officiel : [À COMPLÉTER] — ne pas utiliser d'email personnel</div></div>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer><div class="container" style="display:grid;gap:18px">
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px">
+    <div><div class="logo" style="margin-bottom:8px"><div class="logo-mark">N</div><span><b>NovaMeet</b></span></div><div>Meet Beyond Borders.<br/>Site officiel de l'application NovaMeet.</div></div>
+    <div><b style="color:#E8ECFF">Liens officiels</b><br/><a href="assistance.html">/assistance.html</a><br/><a href="confidentialite.html">/confidentialite.html</a><br/><a href="suppression-compte.html">/suppression-compte.html</a></div>
+    <div><b style="color:#E8ECFF">Éditeur</b><br/><div class="todo" style="margin-top:6px">Éditeur: Jess Zola Gamma<br/>SIREN: 108608969<br/>SIRET: 10860896900011<br/>Adresse: 12 Square Henri Wallon, 78190 Trappes, France<br/>Email pro: [À COMPLÉTER - à ajouter]<br/>DPO: [À DÉTERMINER selon obligations]</div></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid rgba(255,255,255,0.1);padding-top:14px">
+    <span>© 2026 NovaMeet — Tous droits réservés</span><span>Design V2 Premium — #070A14 / #3A7BFF / #8B5CF6</span>
+  </div>
+  <div class="warn">⚠️ Ce site est un modèle prêt à héberger. Il ne constitue pas un avis juridique. Faire valider par un juriste RGPD avant publication App Store.</div>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
