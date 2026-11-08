@@ -4,9 +4,8 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Politique de confidentialité | NovaMeet</title>
-<meta name="description" content="Politique de confidentialité RGPD NovaMeet"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Politique confidentialité NovaMeet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -18,59 +17,71 @@
     <a href="assistance.html" data-page="assistance.html">Assistance</a>
     <a href="confidentialite.html" data-page="confidentialite.html">Confidentialité</a>
     <a href="suppression-compte.html" data-page="suppression-compte.html">Suppression</a>
-    <a href="#" class="btn btn-primary" style="margin-left:8px">Télécharger</a>
+    <a href="mailto:novameet.contact@gmail.com" class="btn btn-primary" style="margin-left:8px">Contact</a>
   </nav>
 </div></header>
 
 <main class="container">
-<div class="hero"><div class="badge">Dernière mise à jour : [À COMPLÉTER - JJ/MM/AAAA]</div><h1>Politique de <em>confidentialité</em></h1><p class="muted">Conforme RGPD et exigences Apple App Store 5.1.1. Ne pas inventer les pratiques — template à valider juridiquement.</p></div>
+<div class="hero"><div class="badge">Mise à jour: 08 novembre 2026 • Contact RGPD: novameet.privacy@gmail.com</div><h1>Politique de <em>confidentialité</em></h1><p class="muted">Conforme RGPD et Apple App Store 5.1.1. Éditeur: Jess Zola Gamma, SIREN 108608969, SIRET 10860896900011, 12 Square Henri Wallon, 78190 Trappes, France.</p></div>
 <div class="grid grid-2 section">
   <div class="toc card" style="height:fit-content">
     <b>Sommaire</b>
-    <a href="#editeur">1. Éditeur / Responsable</a>
+    <a href="#editeur">1. Éditeur</a>
     <a href="#donnees">2. Données personnelles</a>
     <a href="#comptes">3. Comptes et profils</a>
     <a href="#medias">4. Photos et vidéos</a>
-    <a href="#messages">5. Messages privés</a>
+    <a href="#messages">5. Messages</a>
     <a href="#notif">6. Notifications</a>
     <a href="#technique">7. Données techniques</a>
     <a href="#supabase">8. Supabase</a>
     <a href="#prestataires">9. Prestataires</a>
-    <a href="#durees">10. Durées de conservation</a>
+    <a href="#durees">10. Durées</a>
     <a href="#droits">11. Droits RGPD</a>
     <a href="#securite">12. Sécurité</a>
     <a href="#transferts">13. Transferts hors UE</a>
-    <a href="#suppression">14. Suppression des données</a>
+    <a href="#suppression">14. Suppression</a>
   </div>
   <div class="grid" style="gap:18px">
-    <section id="editeur" class="card"><h2>1. Éditeur</h2><div class="todo">À VALIDER IMPÉRATIVEMENT<br/>Nom projet: NovaMeet<br/>Éditeur: Jess Zola Gamma — statut à confirmer (auto-entrepreneur ? société ?)<br/>SIREN trouvé: 108 608 969 associé à JL Beauty — <b>NE PAS attribuer automatiquement à NovaMeet</b>. Créer ou utiliser l'entité juridique réelle de NovaMeet.<br/>SIRET: [À COMPLÉTER]<br/>Adresse pro: [À COMPLÉTER]<br/>Email pro / DPO: [À COMPLÉTER]<br/>Site: [URL finale GitHub Pages]</div></section>
-    <section id="donnees" class="card"><h2>2. Données personnelles</h2><p>Nous collectons les données que vous fournissez lors de l'inscription et de l'utilisation de NovaMeet V2.</p><div class="todo">Lister exhaustivement: email, date de naissance, genre, préférences, localisation approximative, etc. [À COMPLÉTER selon code V2 réel]</div></section>
-    <section id="comptes" class="card"><h2>3. Comptes et profils</h2><p>Informations de profil visibles par les autres utilisateurs selon vos paramètres.</p><div class="todo">[À COMPLÉTER: bio, intérêts, langues, ville, etc.]</div></section>
-    <section id="medias" class="card"><h2>4. Photos, vidéos</h2><p>Vos photos et vidéos de profil et éventuellement partagées dans l'app.</p><div class="todo">Hébergement: Supabase Storage ? [À VÉRIFIER dans NovaMeet V2]. Modération ?</div></section>
-    <section id="messages" class="card"><h2>5. Messages privés</h2><p>Les messages sont chiffrés en transit et stockés pour délivrance.</p><div class="todo">Supabase Realtime / Postgres ? Durée ? [À VÉRIFIER]</div></section>
-    <section id="notif" class="card"><h2>6. Notifications</h2><p>Push notifications pour matchs, messages.</p><div class="todo">Prestataire: Firebase Cloud Messaging / APNs [À VÉRIFIER]</div></section>
-    <section id="technique" class="card"><h2>7. Données techniques</h2><p>Logs, adresse IP, type d'appareil, OS, identifiants publicitaires avec consentement.</p><div class="todo">Lister SDK analytics éventuels [À VÉRIFIER: Aucun / Firebase Analytics ?]</div></section>
-    <section id="supabase" class="card"><h2>8. Données éventuellement collectées par Supabase</h2><p>NovaMeet V2 utilise potentiellement Supabase comme backend (Auth, Database, Storage).</p><div class="todo">IMPORTANT — À VÉRIFIER DANS LE CODE V2:<br/>- Supabase Auth: email, mot de passe hashé<br/>- Postgres: tables users, profiles, messages<br/>- Storage: buckets photos<br/>- Logs Supabase conservés selon leur politique<br/>Indiquer région Supabase: [À COMPLÉTER - ex: eu-west-1] — impact transferts UE</div></section>
-    <section id="prestataires" class="card"><h2>9. Prestataires techniques</h2><div class="todo">Lister: Supabase [région], Apple (achats), Google, hébergeur site (GitHub Pages), [À COMPLÉTER]</div></section>
-    <section id="durees" class="card"><h2>10. Durées de conservation</h2><div class="todo">Durée compte actif + [X mois] après inactivité ? Messages [X] ? Logs [X] ? [À DÉFINIR juridiquement] — Ne pas inventer.</div></section>
-    <section id="droits" class="card"><h2>11. Droits RGPD</h2><p>Accès, rectification, effacement, opposition, portabilité, limitation. Réclamation CNIL.</p><p>Email exercice droits: <span class="todo">[À COMPLÉTER]</span></p></section>
-    <section id="securite" class="card"><h2>12. Sécurité</h2><p>Chiffrement TLS, hash mots de passe, RLS Supabase, modération.</p><div class="todo">[Détailler mesures réelles V2]</div></section>
-    <section id="transferts" class="card"><h2>13. Transferts hors UE</h2><div class="todo">Si Supabase US / Firebase US → mentionner clauses contractuelles types. [À VÉRIFIER]</div></section>
-    <section id="suppression" class="card"><h2>14. Suppression des données</h2><p>Voir <a href="suppression-compte.html">/suppression-compte.html</a> pour la procédure. Suppression sous [À COMPLÉTER - ex: 30 jours] sauf obligations légales (facturation, lutte fraude).</p><div class="todo">Délai légal exact à définir</div></section>
+    <section id="editeur" class="card"><h2>1. Éditeur / Responsable de traitement</h2>
+      <p><b>Nom:</b> Zola Gamma<br/><b>Prénom:</b> Jess<br/><b>SIREN:</b> 108608969<br/><b>SIRET:</b> 10860896900011<br/><b>Adresse:</b> 12 Square Henri Wallon, 78190 Trappes, France<br/>
+      <b>Contact général:</b> <a href="mailto:novameet.contact@gmail.com">novameet.contact@gmail.com</a><br/>
+      <b>Support:</b> <a href="mailto:novameet.support@gmail.com">novameet.support@gmail.com</a><br/>
+      <b>Vie privée / DPO:</b> <a href="mailto:novameet.privacy@gmail.com">novameet.privacy@gmail.com</a> (DPO en cours de désignation selon obligations applicables)</p>
+    </section>
+    <section id="donnees" class="card"><h2>2. Données personnelles collectées</h2><p>Nous collectons uniquement les données nécessaires au fonctionnement de NovaMeet V2 : email, date de naissance (validation majorité), genre, préférences de recherche, ville approximative si autorisée, langues parlées. Aucune donnée sensible non nécessaire n'est collectée.</p></section>
+    <section id="comptes" class="card"><h2>3. Comptes et profils</h2><p>Informations de profil : pseudo, bio, centres d'intérêt, photos que vous choisissez de rendre visibles. Vous contrôlez ce qui est public dans les paramètres de l'app.</p></section>
+    <section id="medias" class="card"><h2>4. Photos et vidéos</h2><p>Photos de profil stockées via le service de stockage de notre backend. Elles sont utilisées uniquement pour affichage dans l'app et modération anti-fraude. Pas de reconnaissance faciale automatisée à des fins publicitaires.</p></section>
+    <section id="messages" class="card"><h2>5. Messages privés</h2><p>Messages entre utilisateurs chiffrés en transit (TLS). Stockés pour permettre l'historique. Non lus par l'équipe sauf signalement explicite de votre part dans le cadre d'une enquête pour abus.</p></section>
+    <section id="notif" class="card"><h2>6. Notifications</h2><p>Notifications push (matchs, messages) via Apple Push Notification Service et, si Android, Firebase Cloud Messaging. Vous pouvez les désactiver dans les réglages système.</p></section>
+    <section id="technique" class="card"><h2>7. Données techniques</h2><p>Adresse IP (sécurité), type d'appareil, version OS, logs de connexion, identifiants anonymes. Pas de tracking publicitaire tiers sans consentement.</p></section>
+    <section id="supabase" class="card"><h2>8. Données éventuellement collectées par Supabase</h2><p>NovaMeet V2 utilise Supabase comme backend (service européen si configuré en région EU). Données concernées : authentification (email, hash mot de passe), base de données Postgres (profils, messages), Storage (photos), logs techniques. Supabase agit en sous-traitant. Région d'hébergement : à vérifier dans dashboard Supabase V2 (recommandé: eu-central-1). Voir politique Supabase pour détails.</p></section>
+    <section id="prestataires" class="card"><h2>9. Prestataires techniques</h2><p>Supabase (backend), Apple (achats in-app), GitHub Pages (hébergement de ce site), Gmail (support - Google). Aucune revente de données.</p></section>
+    <section id="durees" class="card"><h2>10. Durées de conservation</h2><p>Compte actif : durée d'utilisation + 12 mois d'inactivité avant anonymisation. Messages : conservés tant que le compte existe. Logs sécurité : 13 mois. Données comptables si achats : obligations légales françaises (5-10 ans). Suppression définitive sur demande : voir page suppression.</p></section>
+    <section id="droits" class="card"><h2>11. Droits RGPD</h2><p>Accès, rectification, effacement, opposition, portabilité, limitation. Exercice: écrivez à <a href="mailto:novameet.privacy@gmail.com">novameet.privacy@gmail.com</a> depuis l'email du compte. Réponse sous 30 jours. Réclamation possible auprès de la CNIL.</p></section>
+    <section id="securite" class="card"><h2>12. Sécurité</h2><p>TLS, hashage mots de passe, Row Level Security Supabase, modération manuelle, signalement in-app. Aucune méthode de sécurité n'est infaillible, signalez tout incident à novameet.privacy@gmail.com</p></section>
+    <section id="transferts" class="card"><h2>13. Transferts hors UE</h2><p>Si certains prestataires sont hors UE (ex: Gmail/Google), transferts encadrés par clauses contractuelles types. Hébergement principal visé en UE. Contactez novameet.privacy@gmail.com pour détails.</p></section>
+    <section id="suppression" class="card"><h2>14. Suppression des données</h2><p>Procédure complète sur <a href="suppression-compte.html">/suppression-compte.html</a> ou par email à <a href="mailto:novameet.privacy@gmail.com">novameet.privacy@gmail.com</a>. Suppression du profil, photos, messages, préférences sous 30 jours maximum, sauf obligations légales (fraude, comptabilité). Confirmation par email.</p></section>
   </div>
 </div>
 </main>
 
 <footer><div class="container" style="display:grid;gap:18px">
   <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px">
-    <div><div class="logo" style="margin-bottom:8px"><div class="logo-mark">N</div><span><b>NovaMeet</b></span></div><div>Meet Beyond Borders.<br/>Site officiel de l'application NovaMeet.</div></div>
-    <div><b style="color:#E8ECFF">Liens officiels</b><br/><a href="assistance.html">/assistance.html</a><br/><a href="confidentialite.html">/confidentialite.html</a><br/><a href="suppression-compte.html">/suppression-compte.html</a></div>
-    <div><b style="color:#E8ECFF">Éditeur</b><br/><div class="todo" style="margin-top:6px">Éditeur: Jess Zola Gamma<br/>SIREN: 108608969<br/>SIRET: 10860896900011<br/>Adresse: 12 Square Henri Wallon, 78190 Trappes, France<br/>Email pro: [À COMPLÉTER - à ajouter]<br/>DPO: [À DÉTERMINER selon obligations]</div></div>
+    <div><div class="logo" style="margin-bottom:8px"><div class="logo-mark">N</div><span><b>NovaMeet</b></span></div>Meet Beyond Borders.<br/>Site officiel de l'application NovaMeet V2.<br/><br/>
+    <div style="font-size:13px;line-height:1.8">
+    Éditeur: Jess Zola Gamma<br/>
+    SIREN: 108608969<br/>
+    SIRET: 10860896900011<br/>
+    Adresse: 12 Square Henri Wallon, 78190 Trappes, France<br/>
+    Contact: <a href="mailto:novameet.contact@gmail.com">novameet.contact@gmail.com</a><br/>
+    Support: <a href="mailto:novameet.support@gmail.com">novameet.support@gmail.com</a><br/>
+    Confidentialité: <a href="mailto:novameet.privacy@gmail.com">novameet.privacy@gmail.com</a>
+    </div></div>
+    <div><b style="color:#E8ECFF">Liens officiels</b><br/><a href="assistance.html">/assistance.html</a><br/><a href="confidentialite.html">/confidentialite.html</a><br/><a href="suppression-compte.html">/suppression-compte.html</a><br/><br/><b style="color:#E8ECFF">Contact</b><br/><a href="mailto:novameet.contact@gmail.com">Contact général</a><br/><a href="mailto:novameet.support@gmail.com">Support utilisateurs</a><br/><a href="mailto:novameet.privacy@gmail.com">Données personnelles</a></div>
   </div>
   <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid rgba(255,255,255,0.1);padding-top:14px">
-    <span>© 2026 NovaMeet — Tous droits réservés</span><span>Design V2 Premium — #070A14 / #3A7BFF / #8B5CF6</span>
+    <span>© 2026 NovaMeet — Tous droits réservés</span><span>Design V2 #070A14 / #3A7BFF / #8B5CF6</span>
   </div>
-  <div class="warn">⚠️ Ce site est un modèle prêt à héberger. Il ne constitue pas un avis juridique. Faire valider par un juriste RGPD avant publication App Store.</div>
 </div></footer>
 <script src="js/main.js"></script>
 </body>

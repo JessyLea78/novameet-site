@@ -105,6 +105,3 @@ footer a{color:var(--muted); text-decoration:none} footer a:hover{color:var(--te
 .notice{padding:14px; border-radius:12px; background:rgba(58,123,255,0.12); border:1px solid rgba(58,123,255,0.3); font-size:13px}
 .warn{padding:14px; border-radius:12px; background:rgba(255,100,100,0.1); border:1px solid rgba(255,100,100,0.3); font-size:13px}
 </style>
-
-.legal{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:14px;border-radius:14px;font-size:13px;line-height:1.7}
-.legal b{color:#E8ECFF}
